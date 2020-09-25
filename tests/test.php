@@ -8,8 +8,17 @@
 // +----------------------------------------------------------------------
 // | date: 2020-09-24
 // +----------------------------------------------------------------------
-require './../src/test.class.php';
-use esOrm\test;
-test::getInstance();
+$autoloader = require_once dirname(__DIR__) . '/vendor/autoload.php';
+
+require '../src/DataFormate.php';
+require '../src/EsClient.php';
+require '../src/EsOrm.php';
+use \Es\EsOrm;
+$config = require './es.php';
+$esObj = EsOrm::getInst($config);
+$esObj->index = 'test';
+$esObj->indexPrefix = 'y_';
+$response = $esObj->get(234);
+print_r($response);
 
 
