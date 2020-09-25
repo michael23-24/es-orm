@@ -6,7 +6,7 @@
         "elasticsearch/elasticsearch": "^2.4",
         "php": ">=5.4"
     },
-    "license": "Michael23",
+    "license": "michael23-1.0",
     "authors": [
         {
             "name": "michael23",
