@@ -1,50 +1,16 @@
 {
     "name": "michael23/es-orm",
-    "description": "Elasticsearch orm for php.",
+    "description": "Elasticsearch orm for php",
     "type": "library",
-    "keywords": [
-        "elasticseach",
-        "orm",
-        "php"
-    ],
+    "require": {
+        "elasticsearch/elasticsearch": "^2.4",
+        "php": ">=5.4"
+    },
     "license": "Michael23",
-    "homepage": "",
     "authors": [
         {
             "name": "michael23",
-            "email": "244360439@qq.com",
-            "role": "lead"
+            "email": "244360439@qq.com"
         }
-    ],
-    "support": {
-    },
-    "require": {
-        "php": ">=5.4",
-        "elasticsearch/elasticsearch": "^2.4"
-    },
-    "config": {
-        "platform": {
-            "php": "5.4"
-        }
-    },
-    "suggest": {
-        "phpunit/php-invoker": "~1.1"
-    },
-    "bin": [
-        "phpunit"
-    ],
-    "autoload": {
-        "classmap": [
-            "src/"
-        ]
-    },
-    "autoload-dev": {
-        "classmap": [
-            "tests/"
-        ],
-        "files": [
-            "src/Framework/Assert/Functions.php",
-            "tests/_files/CoveredFunction.php"
-        ]
-    }
+    ]
 }
