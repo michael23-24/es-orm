@@ -14,7 +14,7 @@ require '../src/DataFormate.php';
 require '../src/EsClient.php';
 require '../src/EsOrm.php';
 $config = require './es.php';
-use \Es\EsOrm;
+use EsOrm\EsOrm;
 $esObj = EsOrm::getInst($config);
 $esObj->index = 'test';
 $esObj->indexPrefix = 'y_';
