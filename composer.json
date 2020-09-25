@@ -15,7 +15,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "EsOrm\\": "src/",
+            "EsOrm\\": "src/"
         }
-    }
+    },
+    "keywords": ["elasticsearch", "orm", "php", "esorm"]
 }
