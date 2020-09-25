@@ -12,5 +12,10 @@
             "name": "michael23",
             "email": "244360439@qq.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "EsOrm\\": "src/",
+        }
+    }
 }
